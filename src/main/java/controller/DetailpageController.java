@@ -11,7 +11,6 @@ import dto.DetailpageMapDTO;
 import dto.DetailpagePageDTO;
 import service.DetailpageMapService;
 
-
 //http://localhost:8090/myapp/list.do
 //http://localhost:8090/myapp/detailpagemap.do
 
