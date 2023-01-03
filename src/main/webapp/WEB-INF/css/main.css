@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  border-width: 0;
+  text-align: center;
+  /*border: 1px solid black; */
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #444444;
+  -webkit-text-decorations-in-effect: none;
+}
+
+.clear {
+  clear: both;
+}
+
+ul,
+li,
+a {
+  background-color: transparent;
+}
+.icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: "맑은 고딕", "돋움";
+  font-size: 16px;
+  color: #444444;
+  text-align: center;
+}
+
+body::-webkit-scrollbar {
+  width: 8px; /* 스크롤바의 너비 */
+}
+
+body::-webkit-scrollbar-thumb {
+  height: 5px; /* 스크롤바의 길이 */
+  background: ffffff; /* 스크롤바의 색상 */
+
+  border-radius: 10px;
+}
+/* 스크롤바 뒷 배경 색상 */
+/*
+body::-webkit-scrollbar-track {
+    background: rgba(33, 122, 244, .1);  
+} 
+div.body_wrap {
+    text-align:center;
+} */
+
+/* 스크롤바에 마우스 호버 */
+/*
+body::-webkit-scrollbar-thumb:hover {
+    background:lightgrey;
+} */
+
+/* test 단 */
+
+div#rowa {
+  background-color: red;
+}
+div#rowb {
+  background-color: green;
+}
+div#rowc {
+  background-color: blue;
+}
+div#rowd {
+  background-color: violet;
+}
+/* test 끝 */
+
+div.nav {
+  max-width: 1300px;
+  min-width: 1300px;
+  margin-top: 20px;
+  border: 1px solid black;
+  height: 500px;
+}
+
+.navbar-mainmanu {
+  padding-top: var(--bs-navbar-brand-padding-y);
+  padding-bottom: var(--bs-navbar-brand-padding-y);
+  margin-right: var(--bs-navbar-brand-margin-end);
+  color: var(--bs-navbar-brand-color);
+  white-space: nowrap;
+  --bs-navbar-active-color: #fff;
+  --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
+}
+div.login-button {
+  margin: auto;
+}
