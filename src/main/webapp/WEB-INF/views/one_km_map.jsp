@@ -12,8 +12,7 @@
 	crossorigin="anonymous" />
 <script src="https://kit.fontawesome.com/edd4d6d779.js"
 	crossorigin="anonymous"></script>
-<link href="/css/main.css" type="text/css" rel="stylesheet" />
-<script src="1kmMap.js"></script>
+<link href="css/main.css" type="text/css" rel="stylesheet" />
 <script type="text/javascript"
 	src="//dapi.kakao.com/v2/maps/sdk.js?appkey=85e3a2b784700813659ca3ae8da46d29&libraries=services"></script>
 </head>
@@ -21,8 +20,7 @@
 	<div class="header container col-12 colmun-row mt-4">
 		<div class="row">
 			<div class="logo col-3">
-				<a href="javascript: main_page();"><img
-					src="/images/logo2.png" id="logo_img" /></a>
+				<a href="index.do"><img src="images/logo2.png" id="logo_img" /></a>
 			</div>
 			<div class="header-menu column-row col-9">
 				<div class="row">
@@ -45,21 +43,19 @@
 							<div class="collapse navbar-collapse" id="navbarColor03">
 								<ul class="navbar-nav me-auto">
 									<li class="nav-item"><a class="nav-link active"
-										href="javascript: main_page();">Home <span
-											class="visually-hidden">(current)</span>
+										href="main_page.do">Home <span class="visually-hidden">(current)</span>
 									</a></li>
 									<li class="nav-item"><a class="nav-link"
-										href="javascript: team_vita500();">Team Vita500</a></li>
+										href="team_vita500.do">TeamVita500</a></li>
 									<li class="nav-item"><a class="nav-link"
-										href="javascript: curation_page()">Curation</a></li>
+										href="curation_page.do">Curation</a></li>
 									<li class="nav-item"><a class="nav-link"
-										href="javascript: one_km_map()">반경1km</a></li>
+										href="one_km_map.do">반경1km</a></li>
 									<li class="nav-item"><a class="nav-link"
-										href="javascript: magazine_page();">Magazine</a></li>
-									<li class="nav-item"><a class="nav-link"
-										href="javascript: my_page();">My Page</a></li>
-									<li class="nav-item"><a class="nav-link"
-										href="javascript: review();">임시_리뷰</a></li>
+										href="magazine_page.do">Magazine</a></li>
+									<li class="nav-item"><a class="nav-link" href="my_page.do">My
+											Page</a></li>
+									<li class="nav-item"><a class="nav-link" href="review.do">임시_리뷰</a></li>
 								</ul>
 								<form class="d-flex">
 									<input class="form-control me-sm-4" type="search"
@@ -76,8 +72,7 @@
 	<div class="nav">
 		<div class="map_category">
 			<p>
-				<br />
-				<br />
+				<br /> <br />
 			</p>
 			<p>검색 카테고리</p>
 			<br />
@@ -97,14 +92,14 @@
 		</div>
 		<div id="shop_info">
 			<p>
-				<br />
-				<br /> 마커 상세정보 표시 예정
+				<br /> <br /> 마커 상세정보 표시 예정
 			</p>
 		</div>
 	</div>
 	</div>
 	</div>
+	<script src="js/one_km_map.js"></script>
+	<script src="js/main.js"></script>
 </body>
-<script src="one_km_map.js"></script>
-<script defer src="js/main.js"></script>
+
 </html>

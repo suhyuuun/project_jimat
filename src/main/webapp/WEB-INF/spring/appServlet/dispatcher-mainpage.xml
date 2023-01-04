@@ -47,7 +47,7 @@
 	</bean>
 
 	<!-- [6] Controller -->
-	<bean class="controller.DetailpageController">
+	<bean class="controller.HomeController">
 		<property name="service" ref="service" />
 	</bean>
 

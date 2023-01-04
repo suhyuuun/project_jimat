@@ -18,7 +18,7 @@
 	href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" />
 <script src="https://kit.fontawesome.com/edd4d6d779.js"
 	crossorigin="anonymous"></script>
-<link href="/css/sign_up.css" type="text/css" rel="stylesheet" />
+<link href="css/sign_up.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
 	<div class="logo">

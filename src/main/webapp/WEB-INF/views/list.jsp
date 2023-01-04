@@ -14,7 +14,7 @@
 		</tr>
 		<c:forEach items="${aList}" var="dto">
 			<tr>
-				<td><c:url var="path" value="detailpagemap.do">
+				<td><c:url var="path" value="detailpage.do">
 						<c:param name="latitude" value="${dto.latitude}" />
 						<c:param name="longitude" value="${dto.longitude}" />
 					</c:url> <a href="${path}">${dto.res}</a></td>

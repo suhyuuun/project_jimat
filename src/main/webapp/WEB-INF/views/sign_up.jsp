@@ -22,11 +22,11 @@
       src="https://kit.fontawesome.com/edd4d6d779.js"
       crossorigin="anonymous"
     ></script>
-    <link href="/css/sign_up.css" type="text/css" rel="stylesheet" />
-    <script defer src="/js/main.js"></script>
-    <script defer src="/js/login.js"></script>
+    <link href="css/sign_up.css" type="text/css" rel="stylesheet" />
+
 </head>
 <body>
-
+    <script src="js/main.js"></script>
+    <script src="js/login.js"></script>
 </body>
 </html>

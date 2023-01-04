@@ -11,21 +11,57 @@ import dto.DetailpageMapDTO;
 import dto.DetailpagePageDTO;
 import service.DetailpageMapService;
 
+//http://localhost:8090/myapp/index.do
 //http://localhost:8090/myapp/list.do
 //http://localhost:8090/myapp/detailpagemap.do
 
 @Controller
-public class DetailpageController {
+public class HomeController {
 	private DetailpageMapService service;
 	private DetailpagePageDTO pdto;
 	private int currentPage;
 
-	public DetailpageController() {
+	public HomeController() {
 
 	}
 
 	public void setService(DetailpageMapService service) {
 		this.service = service;
+	}
+
+	@RequestMapping("/index.do")
+	public String indexFrom() {
+		return "index";
+	}
+	
+	@RequestMapping("/team_vita500.do")
+	public String team_vita500From() {
+		return "team_vita500";
+	}
+
+	@RequestMapping("/curation_page.do")
+	public String curation_pageFrom() {
+		return "curation_page";
+	}
+
+	@RequestMapping("/one_km_map.do")
+	public String one_km_mapFrom() {
+		return "one_km_map";
+	}
+
+	@RequestMapping("/magazine_page.do")
+	public String magazine_pageFrom() {
+		return "magazine_page";
+	}
+
+	@RequestMapping("/my_page.do")
+	public String my_pageFrom() {
+		return "my_page";
+	}
+
+	@RequestMapping("/review.do")
+	public String reviewFrom() {
+		return "review";
 	}
 
 	@RequestMapping(value = "/list.do", method = RequestMethod.GET)
@@ -44,14 +80,11 @@ public class DetailpageController {
 		mav.setViewName("list");
 		return mav;
 	}// listMethod()
-	
 
-	@RequestMapping(value = "/detailpagemap.do")
+	@RequestMapping(value = "/detailpage.do")
 	public ModelAndView detailpagemapMethod(String latitude, String longitude, ModelAndView mav) {
-		mav.setViewName("detailpagemap");
+		mav.setViewName("detailpage");
 		return mav;
-	}//detailpagemapMethod()
+	}// detailpagemapMethod()
 
-
-	
 }
