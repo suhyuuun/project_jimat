@@ -26,7 +26,9 @@
 		<property name="mapperLocations">
 			<list>
 				<value>classpath:config/mapMapper.xml</value>
+				<value>classpath:config/libraryMapper.xml</value>
 			</list>
+
 		</property>
 	</bean>
 
@@ -52,6 +54,12 @@
 	</bean>
 
 	<!-- [7] View -->
+	<bean id="jsonView"
+		class="org.springframework.web.servlet.view.json.MappingJackson2JsonView">
+		<property name="contentType"
+			value="application/json;charset=UTF-8" />
+	</bean>
+
 	<bean
 		class="org.springframework.web.servlet.view.BeanNameViewResolver">
 		<property name="order" value="1" />
