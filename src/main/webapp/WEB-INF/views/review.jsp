@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Jimat - Food choice for you</title>
-<link href="/css/review.css" type="text/css" rel="stylesheet" />
+<link href="css/review.css" type="text/css" rel="stylesheet" />
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -143,16 +143,16 @@
 						<div class="container d-flex p-3">
 							<div class="row">
 								<div class="review-images col-3">
-									<img src="/data/images/review_images1.jpg" />
+									<img src="data/images/review_images1.jpg" />
 								</div>
 								<div class="review-images col-3">
-									<img src="/data/images/review_images2.jpg" />
+									<img src="data/images/review_images2.jpg" />
 								</div>
 								<div class="review-images col-3">
-									<img src="/data/images/review_images3.jpg" />
+									<img src="data/images/review_images3.jpg" />
 								</div>
 								<div class="review-images col-3">
-									<img src="/data/images/review_images4.jpg" />
+									<img src="data/images/review_images4.jpg" />
 								</div>
 							</div>
 						</div>

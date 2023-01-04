@@ -76,6 +76,5 @@
 		</div>
 	</div>
 </body>
-<script defer src="js/one_km_map.js"></script>
-<script defer src="js/main.js"></script>
+<script src="js/main.js"></script>
 </html>

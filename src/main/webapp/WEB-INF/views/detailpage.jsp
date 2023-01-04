@@ -83,12 +83,8 @@ String lng = request.getParameter("longitude");
 		</div>
 	</div>
 	<script>
-		var lat =
-	<%=lat%>
-		;
-		var lng =
-	<%=lng%>
-		;
+		var lat =<%=lat%>;
+		var lng =<%=lng%>;
 	</script>
 	<script src="js/main.js"></script>
 	<script src="js/detail_page.js"></script>
