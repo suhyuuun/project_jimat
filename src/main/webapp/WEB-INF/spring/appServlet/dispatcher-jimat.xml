@@ -26,7 +26,6 @@
 		<property name="mapperLocations">
 			<list>
 				<value>classpath:config/mapMapper.xml</value>
-				<value>classpath:config/libraryMapper.xml</value>
 			</list>
 
 		</property>
