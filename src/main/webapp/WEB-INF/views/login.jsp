@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Jimat - Food choice for you</title>
 <link
 	href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 	rel="stylesheet" id="bootstrap-css" />
@@ -13,18 +13,13 @@
 <script
 	src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
-
-<link rel="stylesheet"
-	href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" />
-<script src="https://kit.fontawesome.com/edd4d6d779.js"
-	crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" />
+<script src="https://kit.fontawesome.com/edd4d6d779.js" crossorigin="anonymous"></script>
 <link href="css/sign_up.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
 	<div class="logo">
-		<a href="javascript: main_page();"><img
-			src="/images/logo1.png" id="logo_img" /></a>
-	</div>
+		<a href="index.do"><img src="images/logo1.png" id="logo_img" /></a>
 	</div>
 	<div class="container">
 		<div class="card bg-light">
@@ -32,11 +27,12 @@
 				<h4 class="card-title mt-3 text-center">로 그 인</h4>
 				<div class="sns-login">
 					<span> <a href="" class="btn btn-block btn-kakao"> <img
-							src="/images/kakao_login/ko/kakao_login_medium_narrow.png"
+							src="images/kakao_login/ko/kakao_login_medium_narrow.png"
 							id="kakao_btn" />
 					</a>
-					</span> <span> <a href="" class="btn btn-block btn-naver"> <img
-							src="/images/naver_login/ko/naver_btn_login1.png" id="naver_btn" /></a>
+					</span> 
+					<span> 
+					<a href="" class="btn btn-block btn-naver"> <img src="images/naver_login/ko/naver_btn_login1.png" id="naver_btn" /></a>
 					</span>
 					<p class="divider-text">
 						<span class="bg-light">OR</span>
@@ -55,34 +51,31 @@
 						<!-- form-group end.// -->
 						<div class="form-group input-group">
 							<div class="input-group-prepend">
-								<span class="input-group-text"> <i class="fa fa-lock"></i>
-								</span>
+								<span class="input-group-text"> <i class="fa fa-lock"></i></span>
 							</div>
-							<input class="form-control" placeholder="Password"
-								type="password" />
+							<input class="form-control" placeholder="Password" type="password" />
 						</div>
 						<!-- form-group// -->
 						<div class="form-group">
-							<button type="submit" class="btn btn-primary btn-block">
-								로 그 인</button>
+							<button type="submit" class="btn btn-primary btn-block">로 그 인</button>
 						</div>
 						<!-- form-group// -->
 						<p class="text-center">
-							회 원 가 입<a href="javascript: sign_up();"> Sign Up</a>
+							회 원 가 입<a href="sign_up.do"> Sign Up</a>
 						</p>
 					</form>
+				</div>
 			</article>
 		</div>
-		<!-- card.// -->
+		<!-- 		 card.//  -->
 	</div>
 	<!--container end.//-->
-
-	<!-- <select class="custom-select" style="max-width: 120px;">
-    <option selected="">010</option>
-    <option value="1">+972</option>
-    <option value="2">+198</option>
-    <option value="3">+701</option>
-</select>   -->
+	<!-- 	<select class="custom-select" style="max-width: 120px;"> -->
+	<!-- 		<option selected="">010</option> -->
+	<!-- 		<option value="1">+972</option> -->
+	<!-- 		<option value="2">+198</option> -->
+	<!-- 		<option value="3">+701</option> -->
+	<!-- 	</select> -->
 </body>
 <script src="js/main.js"></script>
 </html>

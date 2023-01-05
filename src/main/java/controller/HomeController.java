@@ -60,6 +60,16 @@ public class HomeController {
 		return "search_page_map";
 	}
 
+	@RequestMapping("/login.do")
+	public String loginForm() {
+		return "login";
+	}
+	
+	@RequestMapping("/sign_up.do")
+	public String sign_upForm() {
+		return "sign_up";
+	}
+	
 	@RequestMapping("/my_page.do")
 	public String my_pageForm() {
 		return "my_page";
