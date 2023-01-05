@@ -50,7 +50,6 @@
 										href="magazine_page.do">Magazine</a></li>
 									<li class="nav-item"><a class="nav-link" href="my_page.do">My
 											Page</a></li>
-									<li class="nav-item"><a class="nav-link" href="review.do">임시_리뷰</a></li>
 								</ul>
 								<form class="d-flex">
 									<input class="form-control me-sm-4" type="search"
