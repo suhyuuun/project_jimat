@@ -112,8 +112,10 @@ public class HomeController {
 	public String detailpageMethod(HttpServletRequest httpServletRequest, Model model) {
 		String latitude = httpServletRequest.getParameter("latitude");
 		String longitude = httpServletRequest.getParameter("longitude");
+		String address = httpServletRequest.getParameter("address");
 		model.addAttribute("latitude",latitude);
 		model.addAttribute("longitude",longitude);
+		model.addAttribute("address",address);
 		return "detailpage";
 	}
 }

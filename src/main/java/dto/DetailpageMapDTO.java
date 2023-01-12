@@ -5,6 +5,7 @@ private String res;
 private String latitude;
 private String longitude;
 private String foodstore_id;
+private String address;
 
 public DetailpageMapDTO() {
 	// TODO Auto-generated constructor stub
@@ -40,6 +41,14 @@ public String getFoodstore_id() {
 
 public void setFoodstore_id(String foodstore_id) {
 	this.foodstore_id = foodstore_id;
+}
+
+public String getAddress() {
+	return address;
+}
+
+public void setAddress(String address) {
+	this.address = address;
 }
 
 
