@@ -1,5 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@page import="javax.servlet.annotation.WebServlet"%>
+<%
+String lat = request.getParameter("latitude");
+String lng = request.getParameter("longitude");
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,11 +17,9 @@
 </head>
 <body>
 	<div id="staticMap" style="width: 350px; height: 350px"></div>
-	<div id="foodstore_id"></div>
 	<script>
-		var lat = '${latitude}';
-		var lng = '${longitude}';
+	var lat =<%=lat%>;
+	var lng =<%=lng%>;
 	</script>
-	<script src=js/detail_page.js></script>
 </body>
 </html>

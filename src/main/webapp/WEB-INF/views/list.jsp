@@ -17,7 +17,9 @@
 				<td><c:url var="path" value="detailpage.do">
 						<c:param name="latitude" value="${dto.latitude}" />
 						<c:param name="longitude" value="${dto.longitude}" />
-					</c:url> <a href="${path}">${dto.res}</a></td>
+						<c:param name="foodstore_id" value="${dto.foodstore_id}" />
+						<c:param name="address" value="${dto.address}" />
+					</c:url> <a href="${path}">${dto.foodstore_id}</a></td>
 			</tr>
 		</c:forEach>
 	</table>

@@ -2,7 +2,10 @@ package controller;
 
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -99,10 +102,18 @@ public class HomeController {
 	}// listMethod()
 
 	//상세페이지 (지도까지만 구현)
-	@RequestMapping(value = "/detailpage.do")
-	public ModelAndView detailpagemapMethod(String latitude, String longitude, ModelAndView mav) {
-		mav.setViewName("detailpage");
-		return mav;
-	}// detailpagemapMethod()
+//	@RequestMapping(value = "/detailpage.do")
+//	public ModelAndView detailpagemapMethod(String latitude, String longitude, ModelAndView mav) {
+//		mav.setViewName("detailpage");
+//		return mav;
+//	}// detailpagemapMethod()
 
+	@RequestMapping("/detailpage.do")
+	public String detailpageMethod(HttpServletRequest httpServletRequest, Model model) {
+		String latitude = httpServletRequest.getParameter("latitude");
+		String longitude = httpServletRequest.getParameter("longitude");
+		model.addAttribute("latitude",latitude);
+		model.addAttribute("longitude",longitude);
+		return "detailpage";
+	}
 }
