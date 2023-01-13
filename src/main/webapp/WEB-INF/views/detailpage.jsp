@@ -12,7 +12,11 @@
 </head>
 <body>
 	<div id="staticMap" style="width: 350px; height: 350px"></div>
-	<div id="foodstore_id">${address}</div>
+	<div id="foodstore_id">${foodtype}</div>
+	<div><img src = '${img_url}'></div>
+	<div>${foodstore_id}</div>
+	<div>${foodstroe_num}</div>
+	<div>${road_name}</div>
 	<script>
 		var lat = '${latitude}';
 		var lng = '${longitude}';

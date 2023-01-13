@@ -40,10 +40,19 @@ public class HomeController {
 	public String detailpageMethod(HttpServletRequest httpServletRequest, Model model) {
 		String latitude = httpServletRequest.getParameter("latitude");
 		String longitude = httpServletRequest.getParameter("longitude");
-		String address = httpServletRequest.getParameter("address");
+		String foodtype = httpServletRequest.getParameter("foodtype");
+		String img_url = httpServletRequest.getParameter("img_url");
+		String foodstore_id = httpServletRequest.getParameter("foodstore_id");
+		String foodstroe_num = httpServletRequest.getParameter("foodstroe_num");
+		String road_name = httpServletRequest.getParameter("road_name");
+
 		model.addAttribute("latitude", latitude);
 		model.addAttribute("longitude", longitude);
-		model.addAttribute("address", address);
+		model.addAttribute("foodtype", foodtype);
+		model.addAttribute("img_url", img_url);
+		model.addAttribute("foodstore_id", foodstore_id);
+		model.addAttribute("foodstroe_num", foodstroe_num);
+		model.addAttribute("road_name", road_name);
 		return "detailpage";
 	}
 }

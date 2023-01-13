@@ -7,7 +7,7 @@
 	<select id="list" parameterType="dto.DetailpageMapDTO"
 		resultType="dto.DetailpageMapDTO">
 		select *
-		from res_test
+		from seoulfoodsample
 	</select>
 </mapper>
 
