@@ -45,6 +45,8 @@ public class HomeController {
 		String foodstore_id = httpServletRequest.getParameter("foodstore_id");
 		String foodstroe_num = httpServletRequest.getParameter("foodstroe_num");
 		String road_name = httpServletRequest.getParameter("road_name");
+		String rate = httpServletRequest.getParameter("rate");
+		String openinghours = httpServletRequest.getParameter("openinghours");
 
 		model.addAttribute("latitude", latitude);
 		model.addAttribute("longitude", longitude);
@@ -53,6 +55,8 @@ public class HomeController {
 		model.addAttribute("foodstore_id", foodstore_id);
 		model.addAttribute("foodstroe_num", foodstroe_num);
 		model.addAttribute("road_name", road_name);
+		model.addAttribute("rate", rate);
+		model.addAttribute("openinghours",openinghours);
 		return "detailpage";
 	}
 }

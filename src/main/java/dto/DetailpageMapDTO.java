@@ -16,6 +16,25 @@ public class DetailpageMapDTO {
 	private String longitude;
 	private String foodstroe_num;
 	private String img_url;
+	private String rate;
+	private String openinghours;
+
+	
+	public String getOpeninghours() {
+		return openinghours;
+	}
+
+	public void setOpeninghours(String openinghours) {
+		this.openinghours = openinghours;
+	}
+
+	public String getRate() {
+		return rate;
+	}
+
+	public void setRate(String rate) {
+		this.rate = rate;
+	}
 
 	public DetailpageMapDTO() {
 

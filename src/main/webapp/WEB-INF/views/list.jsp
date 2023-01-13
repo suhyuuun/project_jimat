@@ -22,6 +22,8 @@
 						<c:param name="foodstore_id" value="${dto.foodstore_id}" />
 						<c:param name="foodstroe_num" value="${dto.foodstroe_num}" />
 						<c:param name="road_name" value="${dto.road_name}" />
+						<c:param name="rate" value="${dto.rate}" />
+						<c:param name="openinghours" value="${dto.openinghours}" />
 					</c:url> <a href="${path}">${dto.foodstore_id}</a></td>
 			</tr>
 		</c:forEach>
