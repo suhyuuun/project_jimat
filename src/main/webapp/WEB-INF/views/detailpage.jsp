@@ -12,8 +12,8 @@
 </head>
 <body>
 	<div id="staticMap" style="width: 350px; height: 350px"></div>
-	<div id="foodstore_id">${foodtype}</div>
-	<div><img src = '${img_url}'></div>
+	<div id="foodtype">${foodtype}</div>
+	<div id="img_url"><img src = '${img_url}'></div>
 	<div>${foodstore_id}</div>
 	<div>${foodstroe_num}</div>
 	<div>${road_name}</div>
