@@ -4,11 +4,7 @@
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="res_test">
-	<select id="count" resultType="int">
-		SELECT count(*) FROM res_test
-	</select>
-
-	<select id="list" parameterType="dto.DetailpagePageDTO"
+	<select id="list" parameterType="dto.DetailpageMapDTO"
 		resultType="dto.DetailpageMapDTO">
 		select *
 		from res_test
