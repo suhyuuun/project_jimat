@@ -3,11 +3,19 @@
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="res_test">
-	<select id="list" parameterType="dto.DetailpageMapDTO"
-		resultType="dto.DetailpageMapDTO">
-		select *
-		from seoulfoodsample
+<mapper namespace="seoulfoodsample">
+
+<select id="list" parameterType="dto.DetailpageDTO"
+		resultType="dto.DetailpageDTO">
+	select *
+	from seoulfoodsample
+	</select>
+
+	<select id="list_match" parameterType="dto.DetailpageDTO"
+		resultType="dto.DetailpageDTO">
+		SELECT *
+		FROM seoulfoodsample
+		WHERE res_num = #{res_num_data, jdbcType=VARCHAR}  
 	</select>
 </mapper>
 

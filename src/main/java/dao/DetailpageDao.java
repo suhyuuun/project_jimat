@@ -2,8 +2,9 @@ package dao;
 
 import java.util.List;
 
-import dto.DetailpageMapDTO;
+import dto.DetailpageDTO;
 
 public interface DetailpageDao {
-	public List<DetailpageMapDTO> list(DetailpageMapDTO pv);
+	public List<DetailpageDTO> list(DetailpageDTO pv);
+	public List<DetailpageDTO> list_match(String number);
 }

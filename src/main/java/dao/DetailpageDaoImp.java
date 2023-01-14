@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.mybatis.spring.SqlSessionTemplate;
 
-import dto.DetailpageMapDTO;
+import dto.DetailpageDTO;
 
 public class DetailpageDaoImp implements DetailpageDao {
 
@@ -12,6 +12,7 @@ public class DetailpageDaoImp implements DetailpageDao {
 	
 	}
 	
+	//mapper 호출위함
 	private SqlSessionTemplate sqlSession;
 
 	public void setSqlSession(SqlSessionTemplate sqlSession) {
@@ -19,8 +20,13 @@ public class DetailpageDaoImp implements DetailpageDao {
 	}
 
 	@Override
-	public List<DetailpageMapDTO> list(DetailpageMapDTO pv) {
-		return sqlSession.selectList("res_test.list",pv);
+	public List<DetailpageDTO> list(DetailpageDTO pv) {
+		return sqlSession.selectList("seoulfoodsample.list",pv);
+	}
+
+	@Override
+	public List<DetailpageDTO> list_match(String number) {
+		return sqlSession.selectList("seoulfoodsample.list_match",number);
 	}
 }
 

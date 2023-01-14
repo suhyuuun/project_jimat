@@ -7,7 +7,7 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8" />
-<title>${foodstore_id}</title>
+<title>${aList.foodstore_id}</title>
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -35,23 +35,23 @@
 						<div
 							class="col-9 container shop-left column-row py-2 px-0 ms-0 me-0">
 							<div class="shop-main-image">
-								<img src='${img_url}' id="shop-main-image"/>
+								<img src='${aList.img_url}' id="shop-main-image"/>
 							</div>
 							<div class="shop-info-body column-row p-4">
 								<div class="row">
 									<div class="shop-info d-flex">
 										<div class="shop-name col-7 pe-3">
 											<!-- 업소 이름 -->
-											<p id="shop-name">'${foodstore_id}'</p>
+											<p id="shop-name">'${aList.foodstore_id}'</p>
 										</div>
 										<div class="col-3 shop-category">
 											<!-- 1차/2차 카테고리 -->
-											<p id="shop-category">'${foodcategory}'</p>
+											<p id="shop-category">'${aList.foodcategory}'</p>
 
 										</div>
 										<div class="d-flex col-2" id='div-shop-rating'>
 											<div>
-												<p id="shop-rating">'${rate}'</p>
+												<p id="shop-rating">'${aList.rate}'</p>
 											</div>
 											<div class="bookmark p-2">
 												<input type="checkbox" class="btn-check" id="shop-bookmark"
@@ -64,11 +64,11 @@
 								</div>
 								<div class="shop-info-detail d-flex mt-1">
 									<div class="shop-address">
-										<p id="shop-address">'${road_name}'</p>
-										<p id="shop-phone">'${foodstroe_num}'</p>
+										<p id="shop-address">'${aList.road_name}'</p>
+										<p id="shop-phone">'${aList.foodstroe_num}'</p>
 									</div>
 									<div class="shop-etc">
-										<p id="shop-close">'${openinghours}'</p>
+										<p id="shop-close">'${aList.openinghours}'</p>
 									</div>
 								</div>
 							</div>
@@ -110,8 +110,8 @@
 			</div>
 		</div>
 	<script>
-		var lat = '${latitude}';
-		var lng = '${longitude}';
+		var lat = '${aList.latitude}';
+		var lng = '${aList.longitude}';
 	</script>
 	<script src=js/detail_page.js></script>
 </body>

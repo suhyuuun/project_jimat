@@ -45,12 +45,12 @@
 	</bean>
 
 	<!-- [5] Service -->
-	<bean id="service" class="service.DetailpageMapServiceImp">
+	<bean id="service" class="service.DetailpageServiceImp">
 		<property name="dao" ref="dao" />
 	</bean>
 
 	<!-- [6] Controller -->
-	<bean class="controller.HomeController">
+	<bean class="controller.DetailpageController">
 		<property name="service" ref="service" />
 	</bean>
 

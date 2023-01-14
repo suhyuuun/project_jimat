@@ -12,19 +12,22 @@
 		<tr>
 			<th>맛집이름</th>
 		</tr>
-		<c:forEach items="${aList}" var="dto">
+		<!-- HttpRequestServelet 사용-->
+<%-- 		<c:forEach items="${aList}" var="aList"> --%>
+<!-- 			<tr> -->
+<%-- 				<td><c:url var="path" value="detailpage.do"> --%>
+<%-- 						<c:param name="res_num" value="${aList.res_num}" /> --%>
+<%-- 					</c:url> <a href="${path}">${aList.foodstore_id}</a></td> --%>
+<!-- 			</tr> -->
+<%-- 		</c:forEach> --%>
+		
+		
+		<!-- aList에 parameter값 받아서 적용 -->
+		<c:forEach items="${aList}" var="aList">
 			<tr>
-				<td><c:url var="path" value="detailpage.do">
-						<c:param name="latitude" value="${dto.latitude}" />
-						<c:param name="longitude" value="${dto.longitude}" />
-						<c:param name="foodtype" value="${dto.foodstore_id}" />
-						<c:param name="img_url" value="${dto.img_url}" />
-						<c:param name="foodstore_id" value="${dto.foodstore_id}" />
-						<c:param name="foodstroe_num" value="${dto.foodstroe_num}" />
-						<c:param name="road_name" value="${dto.road_name}" />
-						<c:param name="rate" value="${dto.rate}" />
-						<c:param name="openinghours" value="${dto.openinghours}" />
-					</c:url> <a href="${path}">${dto.foodstore_id}</a></td>
+				<td><c:url var="path" value="detailpage_aList.do">
+						<c:param name="res_num" value="${aList.res_num}" />
+					</c:url> <a href="${path}">${aList.foodstore_id}</a></td>
 			</tr>
 		</c:forEach>
 	</table>
